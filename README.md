@@ -3,7 +3,8 @@
 Three operational Excel workbooks built for regulated financial institutions. Each workbook solves a specific problem a credit risk, counterparty credit, or model risk team faces day to day. Each one is documented, auditable, and built to a standard a regulator would recognize.
 
 **Status:** Portfolio — demonstration workbooks with representative data
-**Related work:** [Python validation projects — Lending Club, Fannie Mae] · [Governance Documentation Studio]
+
+**Related work:** [Python validation projects — Lending Club](https://github.com/MiltonGreat/credit-risk-model-validation.git)· [Fannie Mae](https://github.com/MiltonGreat/fannie-mae-ifrs9-portfolio)
 
 ---
 
@@ -59,7 +60,7 @@ Each workbook answers one of those questions. Together, they cover three of the 
 
 **Derivation note:** Credit limits are derived from credit rating and ratio analysis using simplified logic. They are illustrative and should not be used for actual credit decisions.
 
-**Part of:** [`Counterparty_Credit_Review_Workbook_v1.0_FINAL`](https://github.com/MiltonGreat/GRC-Credit-Analysis-Portfolio/tree/main/counterparty-credit-review)
+**Part of:** [`Counterparty_Credit_Review_Workbook_v1.0`](https://github.com/MiltonGreat/GRC-Credit-Analysis-Portfolio/tree/main/counterparty-credit-review)
 
 **Where to start:** Open the workbook and read the README tab. Then go to the Counterparty Profile.
 
@@ -81,7 +82,7 @@ Each workbook answers one of those questions. Together, they cover three of the 
 
 **Derivation note:** Credit limits and exposure are derived from enterprise financial attributes using simplified logic. They are illustrative and do not represent live counterparty exposure.
 
-**Workbook:** [`Credit_Limit_Exposure_Monitor_v1.0_FINAL.xlsx`](https://github.com/MiltonGreat/GRC-Credit-Analysis-Portfolio/tree/main/credit-limit-exposure-monitor)
+**Workbook:** [`Credit_Limit_Exposure_Monitor_v1.0`](https://github.com/MiltonGreat/GRC-Credit-Analysis-Portfolio/tree/main/credit-limit-exposure-monitor)
 
 **Where to start:** Open the workbook and read the README tab. Then go to the Exposure Register, followed by the Escalation Dashboard.
 
