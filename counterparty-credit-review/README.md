@@ -2,9 +2,6 @@
 
 A structured template for reviewing a counterparty's financial health, comparing it to its peers, and recommending a credit limit with a documented rationale.
 
-**Workbook:** [`Counterparty_Credit_Review_Workbook_v1.0_FINAL.xlsx`](./Counterparty_Credit_Review_Workbook_v1.0_FINAL.xlsx)
-**Part of:** [Credit Risk & Model Risk Governance — Excel Portfolio](../README.md)
-
 ---
 
 ## Business Goal
@@ -76,7 +73,7 @@ Blue cells are input. Black cells are formulas — do not overtype them.
 
 ## Screenshots
 
-See the [`screenshots/`](./screenshots/) folder:
+See the screenshots in this folder:
 
 - `01-counterparty-profile.png` — the profile page with rating and assessment
 - `02-limit-recommendation.png` — the limit recommendation with rationale
@@ -85,4 +82,4 @@ See the [`screenshots/`](./screenshots/) folder:
 
 ## Design Notes
 
-See [`NOTES.md`](./NOTES.md) for the design decisions behind the ratio selection, the peer group construction, and the limit recommendation logic.
+See [`NOTES.md`](https://github.com/MiltonGreat/GRC-Credit-Analysis-Portfolio/blob/main/counterparty-credit-review/NOTES.md) for the design decisions behind the ratio selection, the peer group construction, and the limit recommendation logic.
