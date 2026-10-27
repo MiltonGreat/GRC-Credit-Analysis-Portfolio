@@ -2,9 +2,6 @@
 
 A monitoring template for enterprise exposure against assigned credit limits, with utilization tracking, escalation classification, and a one-page escalation dashboard.
 
-**Workbook:** [`Credit_Limit_Exposure_Monitor_v1.0_FINAL.xlsx`](./Credit_Limit_Exposure_Monitor_v1.0_FINAL.xlsx)
-**Part of:** [Credit Risk & Model Risk Governance — Excel Portfolio](../README.md)
-
 ---
 
 ## Business Goal
@@ -84,7 +81,7 @@ Blue cells are input. Black cells are formulas — do not overtype them.
 
 ## Screenshots
 
-See the [`screenshots/`](./screenshots/) folder:
+See the screenshot in this folder:
 
 - `01-exposure-register.png` — the register of enterprises with limits, exposure, and escalation
 - `02-escalation-dashboard.png` — the one-page dashboard for the credit committee
@@ -93,4 +90,4 @@ See the [`screenshots/`](./screenshots/) folder:
 
 ## Design Notes
 
-See [`NOTES.md`](./NOTES.md) for the design decisions behind the derivation logic, the escalation thresholds, and the dashboard layout.
+See [`NOTES.md`](https://github.com/MiltonGreat/GRC-Credit-Analysis-Portfolio/blob/main/credit-limit-exposure-monitor/NOTES.md) for the design decisions behind the derivation logic, the escalation thresholds, and the dashboard layout.
