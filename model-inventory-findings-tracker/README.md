@@ -81,4 +81,4 @@ See the PNG images in the folder:
 
 ## Design Notes
 
-See [`NOTES.md`](./NOTES.md) for the design decisions behind the workbook structure, the risk-based validation cadence, and the findings-tracking logic.
+See [`NOTES.md`](https://github.com/MiltonGreat/GRC-Credit-Analysis-Portfolio/blob/main/model-inventory-findings-tracker/NOTES.md) for the design decisions behind the workbook structure, the risk-based validation cadence, and the findings-tracking logic.
