@@ -1,88 +1,41 @@
-# Counterparty Credit Review Workbook
+# Design Notes — Model Inventory & Findings Tracker
 
-A structured template for reviewing a counterparty's financial health, comparing it to its peers, and recommending a credit limit with a documented rationale.
-
-**Workbook:** [`Counterparty_Credit_Review_Workbook_v1.0_FINAL.xlsx`](./Counterparty_Credit_Review_Workbook_v1.0_FINAL.xlsx)
-**Part of:** [Credit Risk & Model Risk Governance — Excel Portfolio](../README.md)
+A short record of the decisions behind the workbook, so a reader can understand *why* it is built the way it is.
 
 ---
 
-## Business Goal
+## Why the workbook is structured as a register, not a report
 
-Give a credit analyst a structured, repeatable way to review a counterparty's financial health, compare it to its peer group, and arrive at a defensible credit limit recommendation — with the analysis and the rationale documented in one place.
-
----
-
-## The Problem It Solves
-
-A counterparty credit review that is done in a spreadsheet, a memo, and an email is a review that is hard to audit. Without a structured template:
-
-- Reviews are inconsistent across analysts
-- The rationale for a limit is often missing
-- Peer context is left out
-- A committee cannot see how the recommendation was reached
-
-This workbook makes the review structured, auditable, and comparable across counterparties.
+A report is something you produce once. A register is something you maintain. OSFI E-23 s.3.1 requires a *living* inventory of models, not a one-off snapshot. The workbook is designed so that the Model Inventory tab is the single source of truth, and the Executive Summary and Review Calendar are *views* of that register, not separate documents. Update the register, and the views update automatically.
 
 ---
 
-## What the Workbook Contains
+## Why Tier 1 models are validated annually and Tier 3 every 24 months
 
-| Tab | Purpose |
-|-----|---------|
-| **README** | Explains purpose, regulatory anchors, and scope |
-| **Counterparty Profile** | Company identity, credit rating, review metadata, and analyst assessment |
-| **Ratio Analysis** | Liquidity, leverage, profitability, and cash flow ratios with benchmark comparison |
-| **Peer Comparison** | Same-sector peers, peer averages, and a counterparty-vs-peer table |
-| **Limit Recommendation** | Recommended limit derived from rating and ratio analysis, with rationale and override field |
+OSFI E-23 s.3.2 requires risk-based validation frequency. The logic is that the cost of a model error scales with how the model is used. A Tier 1 model — a capital model, an IFRS 9 ECL model, a stress testing model — can affect the firm's financial statements or regulatory capital. A Tier 3 model — an internal reporting tool — cannot. The cadence is set proportionately so that validation effort goes where the risk is.
 
 ---
 
-## Regulatory and Policy Anchors
+## Why findings are never deleted, only closed
 
-- **Basel III large exposures framework** — A firm must monitor and limit its exposure to any single counterparty or connected group. This workbook is the review layer that sits above the limit-setting process.
-- **Internal credit policy** — Counterparty review, rating assignment, and limit recommendation follow the firm's credit policy.
-- **OSFI E-23** — Where the counterparty is itself a model or AI vendor, model risk expectations may apply.
+A closed finding is evidence that a governance process worked. A deleted finding is evidence that someone did not want the finding seen. The workbook does not have a delete function. Findings are marked Closed when remediated, and they stay in the log. This is the audit trail that OSFI E-23 s.4.2 requires.
 
 ---
 
-## What This Workbook Does NOT Do
+## Why the Review Calendar is a separate tab, not a column in the inventory
 
-It does not perform external credit bureau checks, sanctions screening, or KYC. It does not calculate regulatory capital or large-exposure ratios. It does not assign or approve credit limits — it recommends them. It does not replace the credit committee's judgment or the firm's credit policy.
-
-It is a **review template**. The recommendation it produces is an input to a governance process, not the output of it.
+The Review Calendar is a *governance control* in its own right. Its job is to prove to a regulator that no model is running past its due validation date without an approved exception. If that control is buried as a column in the inventory, it is not visible. As a separate tab, it is the first thing a reviewer sees.
 
 ---
 
-## Data Note and Derivation
+## Why the data note is explicit
 
-The dataset used here (Corporate Credit Rating with Financial Ratios, Kaggle) contains public company financial statements and credit ratings for major US firms between 2010 and 2016. It does not contain assigned credit limits, current exposure, or counterparty relationship data.
-
-The credit limits shown in this workbook are derived from the credit rating and ratio analysis using a simplified scoring logic for demonstration. They are illustrative. They are not the output of a production credit model and should not be used for actual credit decisions. A production limit would also reflect the firm's credit policy, portfolio concentration limits, collateral, and committee judgment.
+The findings in this workbook are anonymized from two real validation projects (Lending Club and Fannie Mae). A reader who does not know this might assume the findings are fictional, which would undervalue the workbook. A reader who *does* know it can see that the findings are grounded in real validation work, which makes the workbook more credible, not less.
 
 ---
 
-## How to Open It
+## What was left out and why
 
-1. Download `Counterparty_Credit_Review_Workbook_v1.0_FINAL.xlsx`
-2. Open in Excel 2019 or later (or Microsoft 365)
-3. Read the **README** tab first
-4. Go to the **Counterparty Profile** tab
-5. Work left to right: Profile → Ratio Analysis → Peer Comparison → Limit Recommendation
-
-Blue cells are input. Black cells are formulas — do not overtype them.
-
----
-
-## Screenshots
-
-See the [`screenshots/`](./screenshots/) folder:
-
-- `01-counterparty-profile.png` — the profile page with rating and assessment
-- `02-limit-recommendation.png` — the limit recommendation with rationale
-
----
-
-## Design Notes
-
-See [`NOTES.md`](./NOTES.md) for the design decisions behind the ratio selection, the peer group construction, and the limit recommendation logic.
+- **Model documentation** — the workbook is a register, not a document store. The inventory row links to the documentation, not the other way around.
+- **Risk rating calculation** — the risk tier is assigned by the risk rating methodology, not calculated by the workbook. The workbook records the tier; it does not derive it.
+- **Validation workflow** — the workbook tracks findings. It does not automate the validation process. That is what a workflow tool is for.
