@@ -2,9 +2,6 @@
 
 A governed register of every model in use, its validation findings, and its review schedule — the core recurring deliverable of a Model Risk Management function.
 
-**Workbook:** [`Model_Inventory_Findings_Tracker_v1.0_FINAL.xlsx`](./Model_Inventory_Findings_Tracker_v1.0_FINAL.xlsx)
-**Part of:** [Credit Risk & Model Risk Governance — Excel Portfolio](../README.md)
-
 ---
 
 ## Business Goal
@@ -75,7 +72,7 @@ Blue cells are input. Black cells are formulas — do not overtype them.
 
 ## Screenshots
 
-See the [`screenshots/`](./screenshots/) folder:
+See the PNG images in the folder:
 
 - `01-executive-summary.png` — the Model Risk Committee dashboard
 - `02-model-inventory.png` — the governed register of models
