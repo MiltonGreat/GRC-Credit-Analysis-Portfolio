@@ -2,10 +2,6 @@
 
 Three operational Excel workbooks built for regulated financial institutions. Each workbook solves a specific problem a credit risk, counterparty credit, or model risk team faces day to day. Each one is documented, auditable, and built to a standard a regulator would recognize.
 
-**Status:** Portfolio — demonstration workbooks with representative data
-
-**Related work:** [Python validation projects — Lending Club](https://github.com/MiltonGreat/credit-risk-model-validation.git)· [Fannie Mae](https://github.com/MiltonGreat/fannie-mae-ifrs9-portfolio)
-
 ---
 
 ## Why These Workbooks Exist
