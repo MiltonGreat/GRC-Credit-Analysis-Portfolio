@@ -72,6 +72,10 @@ Blue cells are input. Black cells are formulas — do not overtype them.
 
 ## Screenshots
 
+<img width="3300" height="2550" alt="01_executive_summary" src="https://github.com/user-attachments/assets/fc572060-dda0-4a3c-9022-3b0793e25a11" />
+
+<img width="3300" height="2550" alt="02-model-inventory" src="https://github.com/user-attachments/assets/9c847e45-7196-4f16-a5ac-aaa58727b2c0" />
+
 See the PNG images in the folder:
 
 - `01-executive-summary.png` — the Model Risk Committee dashboard
