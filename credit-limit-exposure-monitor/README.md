@@ -81,6 +81,10 @@ Blue cells are input. Black cells are formulas — do not overtype them.
 
 ## Screenshots
 
+<img width="2200" height="1700" alt="01-exposure-register-1" src="https://github.com/user-attachments/assets/18932f99-9d02-4e7e-993c-beafb2bc6d43" />
+
+<img width="2200" height="1700" alt="02-escalation-dashboard" src="https://github.com/user-attachments/assets/6a902383-13f7-447a-9d0e-1b3b841231ea" />
+
 See the screenshot in this folder:
 
 - `01-exposure-register.png` — the register of enterprises with limits, exposure, and escalation
